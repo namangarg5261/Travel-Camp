@@ -45,3 +45,30 @@ app.post("/campgrounds", function(req, res){
         }
     });
 });
+
+
+//  Campground.create(
+//      {
+//         name: "Granite Hill", 
+//         image: "https://farm1.staticflickr.com/60/215827008_6489cd30c3.jpg" ,
+//          description: "This is a huge granite hill, no bathrooms.  No water. Beautiful granite!"
+         
+//      },
+//      function(err, campground){
+//       if(err){
+//           console.log(err);
+//       } else {
+//           console.log("NEWLY CREATED CAMPGROUND: ");
+//           console.log(campground);
+//       }
+//     });
+
+
+
+/*
+
+1. Complete Course - Tuesday
+2. Apply for 40 tech internships - Nodejs, Full Stack
+3. Push all code to github and change description
+4. MCA vs MBA
+5. According to 4th answer - it's top colleges in India and exams for that.
