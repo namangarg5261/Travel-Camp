@@ -72,3 +72,5 @@ app.post("/campgrounds", function(req, res){
 3. Push all code to github and change description
 4. MCA vs MBA
 5. According to 4th answer - it's top colleges in India and exams for that.
+6. send message on monday linkedin
+
