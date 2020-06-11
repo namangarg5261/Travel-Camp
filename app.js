@@ -18,7 +18,7 @@ var commentRoutes    = require("./routes/comments"),
 
 
 // mongoose.connect("mongodb://localhost/yelp_camp");    
-mongoose.connect("mongodb+srv://namangarg5261:Naman@2000@yelpcamp.kkovg.mongodb.net/<dbname>?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://namangarg5261:Naman@2000@yelpcamp.kkovg.mongodb.net/<dbname>?retryWrites=true&w=majority&authSource=admin", {
     useNewUrlParser: true,
     useCreateIndex : true
 }).then(() => {
