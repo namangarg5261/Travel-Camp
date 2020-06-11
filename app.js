@@ -24,7 +24,7 @@ mongoose.connect("mongodb+srv://namangarg5261:Naman@2000@yelpcamp.kkovg.mongodb.
 }).then(() => {
     console.log("connected to DB"); 
 }).catch(err => {
-    console.log("ERROR:", err.message);
+    console.log("ERROR>>>>>>>>>>>>>>>>>>>>>>>>>:", err.message);
 });
 
 
