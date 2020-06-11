@@ -2,6 +2,10 @@ var express = require("express");
 var router  = express.Router();
 var passport = require("passport");
 var User = require("../models/user");
+var async = require("async");
+var nodemailer = require("nodemailer");
+var crypto = require("crypto");
+
 
 //root route
 router.get("/", function(req, res){
@@ -49,6 +53,7 @@ router.get("/logout", function(req, res){
    req.flash("success", "Logged you out!");
    res.redirect("/campgrounds");
 });
+
 
 
 
