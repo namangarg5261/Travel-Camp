@@ -1,5 +1,6 @@
-.thumbnail img {
-    width: 100%;
+
+.thumbnail>img{
+    width :100%;
 }
 
 .thumbnail {
@@ -10,3 +11,6 @@
     padding: 9px;
 }
 
+#delete-form{
+    display: inline;
+}
