@@ -1,3 +1,4 @@
+// require('dotenv').config();
 var express     = require("express"),
     app         = express(),
     bodyParser  = require("body-parser"),
@@ -16,6 +17,9 @@ var commentRoutes    = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
     indexRoutes      = require("./routes/index")
 
+// require('dotenv').config()
+
+
 
 // mongoose.connect("mongodb://localhost/yelp_camp");    
 mongoose.connect("mongodb+srv://namangarg5261:Naman@2000@yelpcamp.kkovg.mongodb.net/<dbname>?retryWrites=true&w=majority&authSource=admin", {
@@ -26,6 +30,15 @@ mongoose.connect("mongodb+srv://namangarg5261:Naman@2000@yelpcamp.kkovg.mongodb.
 }).catch(err => {
     console.log("ERROR>>>>>>>>>>>>>>>>>>>>>>>>>:", err.message);
 });
+
+// mongoose.connect(PROCESS.ENV.MONGODB_URI, {
+//     useNewUrlParser: true,
+//     useCreateIndex : true
+// }).then(() => {
+//     console.log("connected to DB"); 
+// }).catch(err => {
+//     console.log("ERROR>>>>>>>>>>>>>>>>>>>>>>>>>:", err.message);
+// });
 
 
 app.use(bodyParser.urlencoded({extended: true}));
