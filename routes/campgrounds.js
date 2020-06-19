@@ -7,12 +7,10 @@ var middleware = require("../middleware");
 //INDEX - show all campgrounds
 router.get("/", function(req, res){
     // Get all campgrounds from DB
-    console.log('caleeddddddd')
     Campground.find({}, function(err, allCampgrounds){
        if(err){
            console.log(err);
        } else {
-           console.log('>>>>>>>>>>>>' , allCampgrounds)
           res.render("campgrounds/index",{campgrounds: allCampgrounds, page: 'campgrounds'});
        }
     });
