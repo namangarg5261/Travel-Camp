@@ -61,5 +61,5 @@ app.use("/campgrounds/:id/comments", commentRoutes);
 
 
 app.listen(port, function(){
-    console.log(`Yelp camp server started at http://localhost:2000/`);
+    console.log(`Travel camp server started at http://localhost:2000/`);
 });
