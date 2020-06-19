@@ -84,10 +84,8 @@ body {
   background: url(https://images.unsplash.com/photo-1445308394109-4ec2920981b1?dpr=2&fit=crop&fm=jpg&h=825&ixlib=rb-0.3.5&q=50&w=1450);
   background-size: cover;
   background-position: center; 
-  transition: background 4s linear;
-  -webkit-backface-visibility: hidden;
-  webkit-transition: background-image 2s linear;
-  -webkit-transform:translate3d(0,0,0);
+  -webkit-transition: background-image 1s ease-in-out;
+  transition: background-image 1s ease-in-out;
 }
 
 .bg {
@@ -128,3 +126,32 @@ hr {
   border-top: 1px solid #f8f8f8;
   border-bottom: 1px solid rgba(0,0,0,0.2);
 }
+
+
+footer {
+  text-align: center;
+  padding: 6px;
+  background-color: DarkSalmon;
+  color: white;
+  margin-top: 17%;
+  }
+  
+  a:hover{
+  color: black;
+  }
+  
+  .fa {
+  padding-left: 1%;
+  text-align: center;
+  margin-right: 2%;
+  }
+  @media only screen and (max-width:768px) {
+  footer {
+  margin-top: 80%;
+  }
+  
+  .fa{
+  margin-right: 15%;
+  }
+  }
+  
